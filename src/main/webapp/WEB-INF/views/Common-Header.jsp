@@ -127,15 +127,21 @@
 						class="dropdown-toggle" data-toggle="dropdown"
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							${user}<b class="caret"></b>
+							<li class="dropdown dropdown clearfix"><a href="#"
+						class="dropdown-toggle" data-toggle="dropdown"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							${admin}<b class="caret"></b>
 					</a>
 						<ul class="dropdown-menu">
-							<li><a href="logout">LogOut</a></li>
+							<li><a href="logout">Logout</a></li>
 
 						</ul></li>
+						</a></li>
+						
 				</c:if>
 			</ul>
 
-			<ul style="font-size: 1.7vw" class="nav navbar-nav">
+			<ul style="font-size: 1.3vw" class="nav navbar-nav">
 				<li><a href="/foodiespot">Home</a>
 				<li><a href="/foodiespot">About Us</a>
 			</ul>
@@ -194,12 +200,7 @@
 						</c:if>
 
 						<!--<c:if test="${pageContext.request.isUserInRole('ROLE_USER')}">-->
-							<div class="btn-group">
-								<a id="bb1" href="" class="btn btn-primary">Download App</a> <a
-									id="bb2" href="#shopping" class="btn btn-info">Visit Store</a>
-								<a id="bb3" href="" class="btn btn-primary"> Spread the word</a>
-							</div>
-
+							
 						</c:if>
 
 					</c:if>

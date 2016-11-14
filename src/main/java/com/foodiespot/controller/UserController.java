@@ -27,7 +27,7 @@ public class UserController {
 		return new UserDetails() ;
 	}
 	
-    /*---------------------------------------------------*/
+   
 	
 
 	@RequestMapping(value = "/addUser")
@@ -49,7 +49,7 @@ public class UserController {
 		} else {
 			userDetailsDao.saveUserDetails(userDetails);
 			ModelAndView modelAndView = new ModelAndView("redirect:/index");
-			modelAndView.addObject("registerMessage", "You are Logged In Successfully.");
+			modelAndView.addObject("registerMessage", "You are Registered Successfully.");
 			
 			logger.info("ForAddingUser method of RegisterController ends here with name " + userDetails.getFullName());
 			return modelAndView;

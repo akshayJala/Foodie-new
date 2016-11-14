@@ -36,7 +36,7 @@
 							</div>
 							<div class="col-xs-5 col-md-5 pull-right">
 								<div class="form-group">
-									<form:label path="cV" for="cV"> CV CODE</form:label>
+									<form:label path="cV" for="cV"> CVV</form:label>
 									<form:input path="cV" type="password" class="form-control"
 										id="cV" placeholder="CV" />
 								</div>

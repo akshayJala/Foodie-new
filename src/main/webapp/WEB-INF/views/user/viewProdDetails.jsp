@@ -8,8 +8,9 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				
-				<img src="<c:url value="/images/Quickart.jpg"></c:url>"
-					class="image-responsive" alt="Quickartlogo" />
+			 <img src="<c:url value="/images/${prod.prodId}.jpg"></c:url>"
+					class="image-responsive" alt="Foodie" /> 
+					
 					<h4>${product.productName}</h4>
 			</div>
 

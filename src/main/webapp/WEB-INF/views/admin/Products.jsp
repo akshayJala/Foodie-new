@@ -6,7 +6,7 @@
 		<td><hr />
 			<div class="container text-center">
 				<div class="row">
-					<h3 style="color: #1E90FF">Add Products</h3>
+					<h3 style="color: #1E90FF">Add Items</h3>
 					<br />
 					<div class="col-sm-12">
 						<div>
@@ -16,14 +16,14 @@
 									<tr>
 										<td>
 											<div class="form-group" style="padding: 20px">
-												<form:label for="productId" path="productId">&nbsp;&nbsp;Product Id&nbsp;&nbsp;:</form:label>
+												<form:label for="productId" path="productId">&nbsp;&nbsp;Item Id&nbsp;&nbsp;:</form:label>
 												<form:input type="text" class="form-control"
 													Style="background-color: #cce6ff;" 
 													path="productId" placeholder=" Product Id" />
 											</div>
 										</td>
 										<td><div class="form-group" style="padding: 20px">
-												<form:label for="productName" path="productName">Product Name&nbsp;:</form:label>
+												<form:label for="productName" path="productName">Item Name&nbsp;:</form:label>
 												<form:input type="text" class="form-control"
 													Style="background-color: #cce6ff;" 
 													path="productName" placeholder="Enter Product" />
@@ -96,7 +96,7 @@
 			</div>
 			<div class="container">
 				<div style="text-align: center;">
-					<h3 style="color: #1E90FF">Your Products
+					<h3 style="color: #1E90FF">Your Items
 						&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 				</div>
 				<table class="table table-striped" align="center">

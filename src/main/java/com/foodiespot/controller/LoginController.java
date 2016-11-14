@@ -104,7 +104,8 @@ public class LoginController {
 			HttpServletResponse response) {
 		HttpSession session = request.getSession();
 		String name = principal.getName();
-		// UserDetailsDao.getUserDetails(name);
+		
+		 //UserDetailsDao.getUserDetails(name);
 		logger.info("UserID " + name);
 
 		session.setAttribute("user", name);
@@ -249,7 +250,7 @@ public class LoginController {
 		logger.info("Admin LogOut (GoToIndexs method) begins here! ");
 		HttpSession session = request.getSession();
 		ModelAndView mv = new ModelAndView("redirect:/logout");
-		session.setAttribute("user", null);
+		session.setAttribute("admin", null);
 		session.invalidate();
 		logger.info("Admin LogOut (GoToIndexs method) Ends here! ");
 		return mv;

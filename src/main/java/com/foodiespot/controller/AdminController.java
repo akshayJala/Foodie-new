@@ -71,7 +71,6 @@ public class AdminController implements ServletContextAware {
 	public Product myProduct() {
 		return new Product();
 	}
-/*=======ADMIN Product-CRUD==============================================*/
 
 	@RequestMapping(value = "/addProduct", method = RequestMethod.GET)
 	public ModelAndView goToAddProduct() {
@@ -171,12 +170,12 @@ System.out.println("connect2..");
 	@RequestMapping(value = "/edit/{Id}", method = RequestMethod.POST)
 	public ModelAndView updation(@PathVariable("Id") int productId, @RequestParam(value = "productName") String productName,
 		@RequestParam(value = "quantity") int quantity,@RequestParam(value = "price") float price,@RequestParam(value = "description") String description,
-		@RequestParam(value = "category") String category1, @RequestParam(value = "supplier") String supplier1) { //
+		@RequestParam(value = "category") String category, @RequestParam(value = "supplier") String supplier) { //
 		logger.info(" Admin-EditProduct (Updation method) begins here with product name "+ product.getProductName());
 		
 		Product product1 = productDao.getProduct(productId) ;
-		product1.setSupplier(supplierDao.getSupplierByName(supplier1));
-		product1.setCategory(categoryDao.getCategoryByName(category1));
+		product1.setSupplier(supplierDao.getSupplierByName(supplier));
+		product1.setCategory(categoryDao.getCategoryByName(category));
 		product1.setPrice(price);
 		product1.setDescription(description);
 		product1.setProductName(productName);
@@ -201,7 +200,7 @@ System.out.println("connect2..");
 	}
 
 	
-	 /*=================Admin-Category-CRUD========================*/
+	
 	
 
 	@RequestMapping(value = "/Categories")
@@ -269,7 +268,7 @@ System.out.println("connect2..");
 	}
 
 	
-	/*===========================Admin-Supplier-CRUD================*/
+	
 	 
 
 	@RequestMapping(value = "/Suppliers")
@@ -334,7 +333,7 @@ System.out.println("connect2..");
 		return modelAndView;
 	}
 	
-	/*======================Functions Regarding Image Uploading=========*/
+	
 
 	public void setServletContext(ServletContext servletContext) {
 		this.servletContext = servletContext;

@@ -46,7 +46,7 @@
 				<div class="panel-footer">
 					<div class="text-right">
 						<a class="btn btn-md btn-success" style="text-decoration: none"
-							href="/quickart/viewProds/checkout">Check-out</a>
+							href="/foodiespot/viewProds/checkout">Check-out</a>
 					</div>
 				</div>
 			</div>

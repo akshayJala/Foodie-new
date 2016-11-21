@@ -169,6 +169,10 @@ public class LoginController {
 	public String showContactUs() {
 		return "ContactUs";
 	}
+	@RequestMapping(value = "/About", method = RequestMethod.GET)
+	public String showAbout() {
+		return "About";
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ModelAndView GoToHome(@RequestParam String name, @RequestParam String password, ModelMap model,

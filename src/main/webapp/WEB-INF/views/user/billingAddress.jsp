@@ -8,14 +8,14 @@
 	<form:form class="form-horizontal" role="form" 
 		commandName="billingAddress">
 		<%-- method="post" action="shippingAddress"> --%>
-		<h2>Please Provide Billing Address</h2>
+		<h2>Please fill the Billing Address</h2>
 
 		<div class="form-group">
 			<form:label for="fullName" path="fullName"
 				class="col-sm-3 control-label">Full Name</form:label>
 			<div class="col-sm-9">
 				<form:input path="fullName" type="text" id="fullName"
-					placeholder="eg: Rakesh Kumar" class="form-control" />
+					placeholder="eg: Akshay Jala" class="form-control" />
 			</div>
 		</div>
 		<div class="form-group">

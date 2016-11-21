@@ -143,7 +143,7 @@
 
 			<ul style="font-size: 1.3vw" class="nav navbar-nav">
 				<li><a href="/foodiespot">Home</a>
-				<li><a href="/foodiespot">About Us</a>
+				<li><a href="/foodiespot/About">About Us</a>
 			</ul>
 		</div>
 		<!--navbar collapse items ends-->
@@ -160,7 +160,7 @@
 					<h1>Order Online!</h1>
 	<p>We have the best chefs around India to make 
 	your tummy full with fresh and delicious food!</p>
-	<a href="#About" class="btn btn-lg btn-info">More info</a>
+	<a href="About" class="btn btn-lg btn-info">More info</a>
 					<c:if test="${ empty pageContext.request.userPrincipal}">
 					</c:if>
 					<c:if test="${not empty pageContext.request.userPrincipal}">

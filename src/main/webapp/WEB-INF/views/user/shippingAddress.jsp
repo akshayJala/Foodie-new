@@ -15,7 +15,7 @@
 				class="col-sm-3 control-label">Full Name</form:label>
 			<div class="col-sm-9">
 				<form:input path="fullName" type="text" id="fullName"
-					placeholder="eg: Rakesh Kumar" class="form-control" />
+					placeholder="eg: Akshay Jala" class="form-control" />
 			</div>
 		</div>
 		<div class="form-group">

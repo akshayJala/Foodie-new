@@ -170,7 +170,7 @@ public class LoginController {
 		return "ContactUs";
 	}
 	@RequestMapping(value = "/About", method = RequestMethod.GET)
-	public String showAbout() {
+	public String showAboutUs() {
 		return "About";
 	}
 
